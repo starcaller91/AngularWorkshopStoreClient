@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { StockListModule } from './stock-list/stock-list.module';
+import { ApiServiceModule } from './api-services/api-service.module';
 
 
 @NgModule({
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    StockListModule,
+    ApiServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

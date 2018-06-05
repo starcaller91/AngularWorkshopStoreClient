@@ -1,0 +1,13 @@
+<div class="col-sm-12">
+    Article name: {{article?.name}}
+</div>
+<div class="col-sm-12">
+    Price per unit: {{article?.price}}
+    <button (click)="increaseArticlePrice()">Increase price by 10</button>
+</div>
+<div class="col-sm-12">
+    Stock ammount: {{article?.stock}}
+</div>
+<div class="col-sm-12">
+    Total worth: {{article?.price*article?.stock}}
+</div>
